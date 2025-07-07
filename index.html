@@ -41,13 +41,6 @@
             <i class="fas fa-bars text-white"></i>
           </button>
 
-          <div class="ml-auto d-flex align-items-center">
-            <!-- Botão para alternar o tema -->
-            <button id="toggle-theme" class="btn btn-custom btn-alternar-modo" style="margin-left: 15px;">
-              Modo Escuro
-            </button>
-          </div>
-
           <div class="collapse navbar-collapse" id="nav-principal">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
@@ -188,50 +181,38 @@
       </div>
     </section>
 
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2">
-            <img src="imagens/logo_v2.png" width="142" alt="Logo Diário de Nathasha" />
-          </div>
-
-          <div class="col-md-2">
-            <h4>CRIADORA</h4>
-            <ul class="navbar-nav">
-              <li>
-                <a href="https://www.linkedin.com/in/nathasha-kizewsky-8191b4270" target="_blank" rel="noopener noreferrer">Linkedin</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-md-2">
-            <h4>Comunidades</h4>
-            <ul class="navbar-nav">
-              <li>
-                <a href="https://open.spotify.com/playlist/0swTyIdnXCk0dxoCcXLbJM?si=bYDEWmSITfWsE5jcoxTPyw&pi=AudeIXODTvGXg" target="_blank" rel="noopener noreferrer">Playlist</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+   <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <img src="imagens/logo_v2.png" width="142" alt="Logo Diário de Nathasha" />
       </div>
-    </footer>
 
-    <!-- Script para alternar o modo claro/escuro -->
-    <script>
-      const btn = document.getElementById("toggle-theme");
-      const body = document.body;
+      <div class="col-md-2">
+        <h4>CRIADORA</h4>
+        <ul class="navbar-nav">
+          <li>
+            <a href="https://www.linkedin.com/in/nathasha-kizewsky-8191b4270" target="_blank" rel="noopener noreferrer">Linkedin</a>
+          </li>
+        </ul>
+      </div>
 
-      btn.addEventListener("click", () => {
-        body.classList.toggle("dark-mode");
-        if (body.classList.contains("dark-mode")) {
-          localStorage.setItem("darkMode", "enabled");
-          btn.textContent = "Modo Claro";
-        } else {
-          localStorage.setItem("darkMode", "disabled");
-          btn.textContent = "Modo Escuro";
-        }
-      });
-    </script>
+      <div class="col-md-2">
+        <h4>Comunidades</h4>
+        <ul class="navbar-nav">
+          <li>
+            <a href="https://open.spotify.com/playlist/0swTyIdnXCk0dxoCcXLbJM?si=bYDEWmSITfWsE5jcoxTPyw&pi=AudeIXODTvGXg" target="_blank" rel="noopener noreferrer">Playlist</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Aqui entra o nome com © -->
+    <div class="text-center mt-4">
+      <small>© Nathasha Kizewsky Brito - 2025</small>
+    </div>
+  </div>
+</footer>
 
     <!-- Bootstrap e dependências -->
     <script
