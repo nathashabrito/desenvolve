@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      crossorigin="anonymous"
+    />
+
+    <!-- Seu CSS -->
+    <link rel="stylesheet" href="css/estilo.css" />
+
+    <title>Diário de Nathasha</title>
+    <link rel="icon" href="imagens/notebook-pen.png" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
+        <div class="container d-flex align-items-center">
+          <a href="index.html" class="navbar-brand">
+            <img src="imagens/logo.png" width="50" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#nav-principal"
+          >
+            <i class="fas fa-bars text-white"></i>
+          </button>
+
+          <div class="ml-auto d-flex align-items-center">
+            <!-- Botão para alternar o tema -->
+            <button id="toggle-theme" class="btn btn-custom btn-alternar-modo" style="margin-left: 15px;">
+              Modo Escuro
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="nav-principal">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Diário</a>
+              </li>
+
+              <li class="nav-item divisor"></li>
+
+              <li class="nav-item">
+                <a
+                  href="https://open.spotify.com/playlist/0swTyIdnXCk0dxoCcXLbJM?si=bYDEWmSITfWsE5jcoxTPyw&pi=AudeIXODTvGXg"
+                  class="nav-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Playlist</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home" class="d-flex">
+      <div class="container align-self-center">
+        <div class="row">
+          <div class="col-md-12 capa">
+            <div id="carousel-spotify" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <h1>Diário de Nathasha</h1>
+                </div>
+               <div class="carousel-item">
+                <h1>Álbums</h1>
+                <a href="https://open.spotify.com/playlist/0swTyIdnXCk0dxoCcXLbJM?si=bYDEWmSITfWsE5jcoxTPyw&pi=AudeIXODTvGXg" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-custom btn-branco">
+                  <i class="fas fa-music"></i> Clique para ver!
+                </a>
+              </div>
+
+              <!-- Controles -->
+              <a href="#carousel-spotify" class="carousel-control-prev" data-slide="prev">
+                <i class="fas fa-angle-left fa-3x"></i>
+              </a>
+              <a href="#carousel-spotify" class="carousel-control-next" data-slide="next">
+                <i class="fas fa-angle-right fa-3x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="caixa">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Coluna da imagem -->
+          <div class="col-md-6 text-center">
+            <div class="iphones">
+              <img src="imagens/iphone1.png" class="img-iphone" />
+              <img src="imagens/iphone2.png" class="img-iphone" />
+            </div>
+          </div>
+
+          <!-- Coluna do texto -->
+          <div class="col-md-6">
+            <h2>Neste diário você encontrará:</h2>
+
+            <h3>Músicas e Artistas</h3>
+            <p>A opinião da autora sobre as músicas e artistas de cada álbum ouvido durante a semana.</p>
+
+            <h3>Playlist</h3>
+            <p>Encontrará uma playlist com as melhores músicas de cada álbum de acordo com a autora.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recursos" class="caixa">
+      <div class="container">
+        <h2 class="text-white mb-4">Diário da Semana</h2>
+        <div class="dias-semana-grid">
+          <div class="box-dia">
+            <time datetime="2025-06-30">30 de Junho</time>
+            <img src="imagens/charli_xcx album.png" alt="Capa do álbum Charli XCX" />
+            <p>BRAT - Charli XCX (2024)</p>
+            <p>
+              Charli entrega sons caóticos e vanguardistas,o que reflete a artista no seu auge criativo. Brat foi considerado um dos melhores álbums de 2024 e possui grande impacto na cultura pop atual.
+            </p>
+          </div>
+          <div class="box-dia">
+            <time datetime="2025-07-01">01 de Julho</time>
+            <img src="imagens/gal costa album.jpg" alt="Capa do álbum Gal Costa" />
+            <p>A pele do Futuro - Gal Costa (2018)</p>
+            <p>
+              Gal expressa maturidade e força vocal em canções que abordam temas como amor, desejo e liberdade. A obra reafirma sua importância e capacidade de reinvenção na música brasileira.
+            </p>
+          </div>
+          <div class="box-dia">
+            <time datetime="2025-07-02">02 de Julho</time>
+            <img src="imagens/clairo album.jpg" alt="Capa do álbum Clairo" />
+            <p>Charm - Clairo (2024)</p>
+            <p>
+              O disco apresenta uma fusão de pop, R&amp;B e soul com influências dos anos 1970, utilizando instrumentos analógicos como Wurlitzer, mellotron, piano e órgão .
+            </p>
+          </div>
+          <div class="box-dia">
+            <time datetime="2025-07-03">03 de Julho</time>
+            <img src="imagens/jorge ben album.jpg" alt="Capa do álbum Jorge Ben Jor" />
+            <p>A Tábua de Esmeralda - Jorge Ben Jor (1974)</p>
+            <p>
+              Obra-prima da música brasileira, o disco explora temas como alquimia, filosofia e espiritualidade, refletindo a fase de "alquimia musical" do artista.
+            </p>
+          </div>
+          <div class="box-dia">
+            <time datetime="2025-07-04">04 de Julho</time>
+            <img src="imagens/pinkpantheress album.jpg" alt="Capa do álbum PinkPantheress" />
+            <p>Fancy That - PinkPantheress (2025)</p>
+            <p>
+              A produção do album é uma fusão de UK garage, jungle e elementos do pop emo, evidenciando uma abordagem mais ousada e madura em relação aos seus trabalhos anteriores.
+            </p>
+          </div>
+          <div class="box-dia">
+            <time datetime="2025-07-05">05 de Julho</time>
+            <img src="imagens/sain album.jpg" alt="Capa do álbum Sain" />
+            <p>KTT ZOO - Sain (2023)</p>
+            <p>
+              Imersão sonora nas ruas do Catete, com produção totalmente assinada por Sain. O rapper mistura influências do boom bap nova-iorquino dos anos 90 com a estética dos bailes cariocas.
+            </p>
+          </div>
+          <div class="box-dia">
+            <time datetime="2025-07-06">06 de Julho</time>
+            <img src="imagens/rochelle album.jpg" alt="Capa do álbum Rochelle Jordan" />
+            <p>Play With the Changes - Rochelle Jordan (2021)</p>
+            <p>
+              Fusão sofisticada de R&amp;B eletrônico e influências de UK garage, house e soul, o disco apresenta vocais etéreos de Jordan sobre batidas marcantes e atmosferas introspectivas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <img src="imagens/logo_v2.png" width="142" alt="Logo Diário de Nathasha" />
+          </div>
+
+          <div class="col-md-2">
+            <h4>CRIADORA</h4>
+            <ul class="navbar-nav">
+              <li>
+                <a href="https://www.linkedin.com/in/nathasha-kizewsky-8191b4270" target="_blank" rel="noopener noreferrer">Linkedin</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h4>Comunidades</h4>
+            <ul class="navbar-nav">
+              <li>
+                <a href="https://open.spotify.com/playlist/0swTyIdnXCk0dxoCcXLbJM?si=bYDEWmSITfWsE5jcoxTPyw&pi=AudeIXODTvGXg" target="_blank" rel="noopener noreferrer">Playlist</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script para alternar o modo claro/escuro -->
+    <script>
+      const btn = document.getElementById("toggle-theme");
+      const body = document.body;
+
+      btn.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+        if (body.classList.contains("dark-mode")) {
+          localStorage.setItem("darkMode", "enabled");
+          btn.textContent = "Modo Claro";
+        } else {
+          localStorage.setItem("darkMode", "disabled");
+          btn.textContent = "Modo Escuro";
+        }
+      });
+    </script>
+
+    <!-- Bootstrap e dependências -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
